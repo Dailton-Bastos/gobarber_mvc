@@ -6,7 +6,7 @@ const routes = require('./routes');
 class App {
   constructor() {
     this.server = express();
-    this.isDev = process.env.ENV !== 'production';
+    this.isDev = process.env.NODE_ENV !== 'production';
 
     this.middlewares();
     this.views();

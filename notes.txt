@@ -1,0 +1,3 @@
+# Test Sequelize Migrations
+
+yarn sequelize migration:create --name=create-users
