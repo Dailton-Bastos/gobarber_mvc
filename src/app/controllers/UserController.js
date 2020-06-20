@@ -6,6 +6,8 @@ class UserController {
   }
 
   async store(req, res) {
+    req.body.avatar = 'teste.jpg';
+
     const { avatar, name, email, password, provider } = req.body;
 
     await User.create({
