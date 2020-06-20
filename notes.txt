@@ -1,5 +1,7 @@
 # Test Sequelize Migrations
 yarn sequelize migration:create --name=create-users
+# Create Sequelize Migration
+yarn sequelize db:migrate
 
 # Install postgreSQL Docker
 docker run --name gobarber_mvc -p 5432:5432 -d -t kartoza/postgis
