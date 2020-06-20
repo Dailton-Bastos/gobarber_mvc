@@ -1,0 +1,31 @@
+{
+  "name": "gobarber-mvc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Dailton Bastos",
+    "email": "dailtonbastos@gmail.com"
+  },
+  "scripts": {
+    "dev": "npm-run-all -p nodemon browsersync",
+    "nodemon": "nodemon src/server.js",
+    "browsersync": "browser-sync start --proxy http://localhost:3333 --files './public, src/app/views'",
+    "eslint-fix": "eslint --fix src --ext .js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "eslint": "^7.3.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5"
+  }
+}
