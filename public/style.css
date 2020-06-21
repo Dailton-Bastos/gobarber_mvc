@@ -150,3 +150,12 @@ img {
 .auth-wrapper form a:hover {
   color: #666;
 }
+
+/* Dashboard */
+.main-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+}
