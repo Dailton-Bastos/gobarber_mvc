@@ -1,6 +1,7 @@
 const express = require('express');
 const session = require('express-session');
 const FileStore = require('session-file-store')(session);
+const flash = require('connect-flash');
 const nunjucks = require('nunjucks');
 const { resolve } = require('path');
 const routes = require('./routes');
@@ -17,6 +18,7 @@ class App {
 
   middlewares() {
     this.server.use(express.urlencoded({ extended: true }));
+    this.server.use(flash());
     this.server.use(
       session({
         name: 'root',

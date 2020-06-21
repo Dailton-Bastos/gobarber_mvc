@@ -159,3 +159,23 @@ img {
   align-items: flex-start;
   padding-top: 60px;
 }
+
+/* Alert Message */
+.alert {
+  width: 100%;
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: 1px solid;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+
+.alert-success {
+  background-color: #adf7b2;
+  border-color: #96e89c;
+}
+
+.alert-danger {
+  background-color: #f38888;
+  border-color: #de6d6d;
+}
