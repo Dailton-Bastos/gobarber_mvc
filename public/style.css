@@ -70,6 +70,10 @@ img {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+.auth-wrapper form > img {
+  margin-bottom: 20px;
+}
+
 .auth-wrapper form input:not([type='checkbox']) {
   height: 40px;
   padding: 0 15px;
