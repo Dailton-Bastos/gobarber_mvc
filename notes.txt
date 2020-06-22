@@ -1,5 +1,6 @@
 # Test Sequelize Migrations
 yarn sequelize migration:create --name=create-users
+yarn sequelize migration:create --name=create-appointments
 # Create Sequelize Migration
 yarn sequelize db:migrate
 
