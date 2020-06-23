@@ -292,6 +292,10 @@ img {
   align-items: center;
 }
 
+#hours label.disabled {
+  opacity: 0.3;
+}
+
 #hours label input {
   margin: 0;
   height: auto;
